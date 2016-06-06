@@ -12,7 +12,7 @@ public class Sudoku {
 	char[][] board;
 
 	public static void main(String[] args) throws IOException {
-		Sudoku sudoku = new Sudoku(read(new File("242.txt")));
+		Sudoku sudoku = new Sudoku(read(new File("130.txt")));
 		if (!sudoku.iterateTrySolve()) {
 			sudoku.tryMulti();
 		}
